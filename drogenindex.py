@@ -38,7 +38,7 @@ DRUGS = {
     "Equisetum arvense": ("Equiseti herba", "Equisetaceae", "Schachtelhalmkraut"),
     "Hypericum perforatum": ("Hyperici herba", "Hypericaceae", "Johanniskraut"),
     "Achillea millefolium": ("Millefolii herba", "Asteraceae", "Schafgarbenkraut"),
-    "Thymus vulgaris": ("Thymi herba", "Lamiaceae", "Thymian"),
+    "Thymus zygis": ("Thymi herba", "Lamiaceae", "Thymian"),
     "Viscum album": ("Visci herba", "Santalaceae", "Mistelkraut"),
     "Cinnamomum verum": ("Cinnamomi cortex", "Lauraceae", "Zimtrinde"),
     "Frangula alnus": ("Frangulae cortex", "Rhamnaceae", "Faulbaumrinde"),
