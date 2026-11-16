@@ -83,7 +83,7 @@ def check_answer(drug_guess, plant_guess, family_guess):
     st.session_state.total_questions += 1
     drug_lat, family, plant_lat = DRUGS[st.session_state.current]
 
-  def check_answer(drug_guess, plant_guess, family_guess):
+def check_answer(drug_guess, plant_guess, family_guess):
     st.session_state.total_questions += 1
     
     # The key IS the Latin plant name; the 3rd tuple item is the German name
@@ -95,6 +95,8 @@ def check_answer(drug_guess, plant_guess, family_guess):
         ("🌿 Latin plant name", plant_guess, plant_lat),
         ("🌱 Family", family_guess, family),
     ]
+    # ... rest of your function stays the same
+
     results = [(label, norm(g) == norm(c), c) for label, g, c in checks]
 
     if all(ok for _, ok, _ in results):
