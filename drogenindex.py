@@ -83,6 +83,13 @@ def check_answer(drug_guess, plant_guess, family_guess):
     st.session_state.total_questions += 1
     drug_lat, family, plant_lat = DRUGS[st.session_state.current]
 
+  def check_answer(drug_guess, plant_guess, family_guess):
+    st.session_state.total_questions += 1
+    
+    # The key IS the Latin plant name; the 3rd tuple item is the German name
+    plant_lat = st.session_state.current
+    drug_lat, family, _ = DRUGS[st.session_state.current]
+    
     checks = [
         ("🧪 Latin drug name", drug_guess, drug_lat),
         ("🌿 Latin plant name", plant_guess, plant_lat),
