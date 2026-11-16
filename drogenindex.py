@@ -81,7 +81,7 @@ def next_question():
 
 def check_answer(drug_guess, plant_guess, family_guess):
     st.session_state.total_questions += 1
-    drug_lat, plant_lat, family = DRUGS[st.session_state.current]
+    drug_lat, family, plant_lat = DRUGS[st.session_state.current]
 
     checks = [
         ("🧪 Latin drug name", drug_guess, drug_lat),
@@ -110,7 +110,7 @@ st.write("You see the German drug name. Type the Latin drug name, the Latin plan
 st.sidebar.header("🏆 Scoreboard")
 st.sidebar.metric("Score", f"{st.session_state.score} / {st.session_state.total_questions}")
 
-st.subheader(f"Drug: **{st.session_state.current}**")
+st.subheader(f"Drug: **{DRUGS[st.session_state.current][2]}**")
 
 with st.form(key="quiz_form", clear_on_submit=True):
     drug_guess = st.text_input("Latin drug name (e.g. Matricariae flos):")
